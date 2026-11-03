@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "jadlis-plan-bypass",
+  "version": "1.0.0",
+  "displayName": "Plan bypass — одобрил план с телефона, сессия в bypass",
+  "description": "Хук для Claude Code в tmux: когда ты одобряешь план из приложения Remote Control на телефоне, сессия на компьютере сама переходит из auto mode в bypass permissions, очищает контекст и начинает реализацию плана в чистом окне — как кнопка «Yes, clear context and bypass permissions» в терминале.",
+  "author": {
+    "name": "Be Cyborg"
+  },
+  "homepage": "https://gitlab.com/beCyborg/jadlis-plan-bypass",
+  "repository": "https://gitlab.com/beCyborg/jadlis-plan-bypass",
+  "keywords": [
+    "jadlis",
+    "remote-control",
+    "plan-mode",
+    "bypass-permissions",
+    "tmux",
+    "hook"
+  ],
+  "userConfig": {
+    "CLEAR_CONTEXT": {
+      "type": "string",
+      "title": "Очищать контекст после одобрения с телефона",
+      "description": "yes — очистить контекст и начать реализацию плана в чистом окне (по умолчанию). no — только переключить в bypass и продолжить в том же контексте.",
+      "default": "yes",
+      "required": false
+    }
+  }
+}
