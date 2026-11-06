@@ -26,7 +26,7 @@
 ## Установка
 
 ```
-claude plugin marketplace add https://gitlab.com/beCyborg/jadlis-hub.git
+claude plugin marketplace add https://github.com/beCyborg/jadlis-hub.git
 claude plugin install jadlis-plan-bypass@jadlis
 ```
 
